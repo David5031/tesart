@@ -1,20 +1,20 @@
 # tests reports
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test1.IntegrationTestMain-20240815163017" tests="1" file="integration_test1.py" time="0.003" timestamp="2024-08-15T16:30:18" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test1.IntegrationTestMain" name="test_keyboard_0" time="0.003" timestamp="2024-08-15T16:30:18" file="example_test_folder\integration_test1.py" line="79"/>
+	<testsuite name="integration_test1.IntegrationTestMain-20240815165247" tests="1" file="integration_test1.py" time="0.002" timestamp="2024-08-15T16:52:49" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test1.IntegrationTestMain" name="test_keyboard_0" time="0.002" timestamp="2024-08-15T16:52:49" file="example_test_folder\integration_test1.py" line="79"/>
 	</testsuite>
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test10.IntegrationTestMain10-20240815163018" tests="1" file="integration_test10.py" time="0.001" timestamp="2024-08-15T16:30:19" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test10.IntegrationTestMain10" name="test_keyboard_9" time="0.001" timestamp="2024-08-15T16:30:19" file="example_test_folder\integration_test10.py" line="90"/>
+	<testsuite name="integration_test10.IntegrationTestMain10-20240815165249" tests="1" file="integration_test10.py" time="0.001" timestamp="2024-08-15T16:52:50" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test10.IntegrationTestMain10" name="test_keyboard_9" time="0.001" timestamp="2024-08-15T16:52:50" file="example_test_folder\integration_test10.py" line="90"/>
 	</testsuite>
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test11.IntegrationTestMain11-20240815163020" tests="1" file="integration_test11.py" time="0.001" timestamp="2024-08-15T16:30:21" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test11.IntegrationTestMain11" name="test_keyboard_minus" time="0.001" timestamp="2024-08-15T16:30:21" file="example_test_folder\integration_test11.py" line="91">
+	<testsuite name="integration_test11.IntegrationTestMain11-20240815165250" tests="1" file="integration_test11.py" time="0.001" timestamp="2024-08-15T16:52:51" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test11.IntegrationTestMain11" name="test_keyboard_minus" time="0.001" timestamp="2024-08-15T16:52:51" file="example_test_folder\integration_test11.py" line="91">
 			<system-out><![CDATA[la val de tempBUTTON avant: 0.0
 pressed -
 ]]></system-out>
@@ -23,8 +23,8 @@ pressed -
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test12.IntegrationTestMain12-20240815163021" tests="1" file="integration_test12.py" time="0.001" timestamp="2024-08-15T16:30:22" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test12.IntegrationTestMain12" name="test_keyboard_plus" time="0.001" timestamp="2024-08-15T16:30:22" file="example_test_folder\integration_test12.py" line="90">
+	<testsuite name="integration_test12.IntegrationTestMain12-20240815165251" tests="1" file="integration_test12.py" time="0.002" timestamp="2024-08-15T16:52:52" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test12.IntegrationTestMain12" name="test_keyboard_plus" time="0.002" timestamp="2024-08-15T16:52:52" file="example_test_folder\integration_test12.py" line="90">
 			<system-out><![CDATA[pressed +
 ]]></system-out>
 		</testcase>
@@ -32,14 +32,14 @@ pressed -
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test13.IntegrationTestMain13-20240815163022" tests="1" file="integration_test13.py" time="5.001" timestamp="2024-08-15T16:30:29" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test13.IntegrationTestMain13" name="test_applause_button_1" time="5.001" timestamp="2024-08-15T16:30:29" file="example_test_folder\integration_test13.py" line="84"/>
+	<testsuite name="integration_test13.IntegrationTestMain13-20240815165253" tests="1" file="integration_test13.py" time="5.002" timestamp="2024-08-15T16:52:59" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test13.IntegrationTestMain13" name="test_applause_button_1" time="5.002" timestamp="2024-08-15T16:52:59" file="example_test_folder\integration_test13.py" line="84"/>
 	</testsuite>
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test14.IntegrationTestMain14-20240815163029" tests="1" file="integration_test14.py" time="0.010" timestamp="2024-08-15T16:30:30" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test14.IntegrationTestMain14" name="test_silence_button_1" time="0.010" timestamp="2024-08-15T16:30:30" file="example_test_folder\integration_test14.py" line="86">
+	<testsuite name="integration_test14.IntegrationTestMain14-20240815165259" tests="1" file="integration_test14.py" time="0.008" timestamp="2024-08-15T16:53:00" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test14.IntegrationTestMain14" name="test_silence_button_1" time="0.008" timestamp="2024-08-15T16:53:00" file="example_test_folder\integration_test14.py" line="86">
 			<system-out><![CDATA[value prochain pour silence normalement (1) 1.0
 audio/silence5sec.wav
 ]]></system-out>
@@ -48,31 +48,18 @@ audio/silence5sec.wav
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test15.IntegrationTestMain15-20240815163031" tests="1" file="integration_test15.py" time="0.001" timestamp="2024-08-15T16:30:31" failures="0" errors="1" skipped="0">
-		<testcase classname="integration_test15.IntegrationTestMain15" name="test_change_musique_button_num_5" time="0.001" timestamp="2024-08-15T16:30:31" file="example_test_folder\integration_test15.py" line="76">
-			<error type="AttributeError" message="'NoneType' object has no attribute 'par'"><![CDATA[Traceback (most recent call last):
-  File "C:\Users\tangd\OneDrive\Bureau\touchdesigner-test-launcher\example_test_folder\integration_test15.py", line 78, in test_change_musique_button_num_5
-    prochain.par.value0 = 5
-    ^^^^^^^^^^^^
-AttributeError: 'NoneType' object has no attribute 'par'
-]]></error>
-		</testcase>
-	</testsuite>
-	<testsuite name="unittest.suite._ErrorHolder-20240815163031" tests="1" file="unittest/suite.py" time="0.000" timestamp="0001-01-01T00:00:00" failures="0" errors="1" skipped="0">
-		<testcase classname="" name="tearDownClass (integration_test15.IntegrationTestMain15)" time="0.000" timestamp="0001-01-01T00:00:00" file="example_test_folder\integration_test15.py" line="76">
-			<error type="AttributeError" message="'NoneType' object has no attribute 'destroy'"><![CDATA[Traceback (most recent call last):
-  File "C:\Users\tangd\OneDrive\Bureau\touchdesigner-test-launcher\example_test_folder\integration_test15.py", line 37, in tearDownClass
-    tox_load.destroy()
-    ^^^^^^^^^^^^^^^^
-AttributeError: 'NoneType' object has no attribute 'destroy'
-]]></error>
+	<testsuite name="integration_test15.IntegrationTestMain15-20240815165300" tests="1" file="integration_test15.py" time="0.010" timestamp="2024-08-15T16:53:02" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test15.IntegrationTestMain15" name="test_change_musique_button_num_5" time="0.010" timestamp="2024-08-15T16:53:02" file="example_test_folder\integration_test15.py" line="76">
+			<system-out><![CDATA[numeroChanson =  5
+2.0
+]]></system-out>
 		</testcase>
 	</testsuite>
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test16.TestMain-20240815163031" tests="1" file="integration_test16.py" time="0.336" timestamp="2024-08-15T16:30:32" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test16.TestMain" name="test_change_musique_button_num_diff_5" time="0.336" timestamp="2024-08-15T16:30:32" file="example_test_folder\integration_test16.py" line="74">
+	<testsuite name="integration_test16.TestMain-20240815165302" tests="1" file="integration_test16.py" time="0.244" timestamp="2024-08-15T16:53:04" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test16.TestMain" name="test_change_musique_button_num_diff_5" time="0.244" timestamp="2024-08-15T16:53:04" file="example_test_folder\integration_test16.py" line="74">
 			<system-out><![CDATA[numeroChanson =  1
 ]]></system-out>
 		</testcase>
@@ -80,49 +67,49 @@ AttributeError: 'NoneType' object has no attribute 'destroy'
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test2.IntegrationTestMain2-20240815163033" tests="1" file="integration_test2.py" time="0.001" timestamp="2024-08-15T16:30:34" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test2.IntegrationTestMain2" name="test_keyboard_1" time="0.001" timestamp="2024-08-15T16:30:34" file="example_test_folder\integration_test2.py" line="88"/>
+	<testsuite name="integration_test2.IntegrationTestMain2-20240815165304" tests="1" file="integration_test2.py" time="0.001" timestamp="2024-08-15T16:53:05" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test2.IntegrationTestMain2" name="test_keyboard_1" time="0.001" timestamp="2024-08-15T16:53:05" file="example_test_folder\integration_test2.py" line="88"/>
 	</testsuite>
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test3.IntegrationTestMain3-20240815163034" tests="1" file="integration_test3.py" time="0.001" timestamp="2024-08-15T16:30:35" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test3.IntegrationTestMain3" name="test_keyboard_2" time="0.001" timestamp="2024-08-15T16:30:35" file="example_test_folder\integration_test3.py" line="88"/>
+	<testsuite name="integration_test3.IntegrationTestMain3-20240815165306" tests="1" file="integration_test3.py" time="0.001" timestamp="2024-08-15T16:53:07" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test3.IntegrationTestMain3" name="test_keyboard_2" time="0.001" timestamp="2024-08-15T16:53:07" file="example_test_folder\integration_test3.py" line="88"/>
 	</testsuite>
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test4.IntegrationTestMain4-20240815163035" tests="1" file="integration_test4.py" time="0.001" timestamp="2024-08-15T16:30:37" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test4.IntegrationTestMain4" name="test_keyboard_3" time="0.001" timestamp="2024-08-15T16:30:37" file="example_test_folder\integration_test4.py" line="88"/>
+	<testsuite name="integration_test4.IntegrationTestMain4-20240815165307" tests="1" file="integration_test4.py" time="0.001" timestamp="2024-08-15T16:53:08" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test4.IntegrationTestMain4" name="test_keyboard_3" time="0.001" timestamp="2024-08-15T16:53:08" file="example_test_folder\integration_test4.py" line="88"/>
 	</testsuite>
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test5.IntegrationTestMain5-20240815163037" tests="1" file="integration_test5.py" time="0.001" timestamp="2024-08-15T16:30:38" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test5.IntegrationTestMain5" name="test_keyboard_4" time="0.001" timestamp="2024-08-15T16:30:38" file="example_test_folder\integration_test5.py" line="89"/>
+	<testsuite name="integration_test5.IntegrationTestMain5-20240815165309" tests="1" file="integration_test5.py" time="0.001" timestamp="2024-08-15T16:53:10" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test5.IntegrationTestMain5" name="test_keyboard_4" time="0.001" timestamp="2024-08-15T16:53:10" file="example_test_folder\integration_test5.py" line="89"/>
 	</testsuite>
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test6.IntegrationTestMain6-20240815163038" tests="1" file="integration_test6.py" time="0.001" timestamp="2024-08-15T16:30:40" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test6.IntegrationTestMain6" name="test_keyboard_5" time="0.001" timestamp="2024-08-15T16:30:40" file="example_test_folder\integration_test6.py" line="89"/>
+	<testsuite name="integration_test6.IntegrationTestMain6-20240815165310" tests="1" file="integration_test6.py" time="0.001" timestamp="2024-08-15T16:53:11" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test6.IntegrationTestMain6" name="test_keyboard_5" time="0.001" timestamp="2024-08-15T16:53:11" file="example_test_folder\integration_test6.py" line="89"/>
 	</testsuite>
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test7.IntegrationTestMain7-20240815163040" tests="1" file="integration_test7.py" time="0.001" timestamp="2024-08-15T16:30:41" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test7.IntegrationTestMain7" name="test_keyboard_6" time="0.001" timestamp="2024-08-15T16:30:41" file="example_test_folder\integration_test7.py" line="89"/>
+	<testsuite name="integration_test7.IntegrationTestMain7-20240815165311" tests="1" file="integration_test7.py" time="0.001" timestamp="2024-08-15T16:53:12" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test7.IntegrationTestMain7" name="test_keyboard_6" time="0.001" timestamp="2024-08-15T16:53:12" file="example_test_folder\integration_test7.py" line="89"/>
 	</testsuite>
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test8.IntegrationTestMain8-20240815163041" tests="1" file="integration_test8.py" time="0.001" timestamp="2024-08-15T16:30:42" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test8.IntegrationTestMain8" name="test_keyboard_7" time="0.001" timestamp="2024-08-15T16:30:42" file="example_test_folder\integration_test8.py" line="89"/>
+	<testsuite name="integration_test8.IntegrationTestMain8-20240815165313" tests="1" file="integration_test8.py" time="0.001" timestamp="2024-08-15T16:53:14" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test8.IntegrationTestMain8" name="test_keyboard_7" time="0.001" timestamp="2024-08-15T16:53:14" file="example_test_folder\integration_test8.py" line="89"/>
 	</testsuite>
 </testsuites>
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="integration_test9.IntegrationTestMain9-20240815163043" tests="1" file="integration_test9.py" time="0.000" timestamp="2024-08-15T16:30:44" failures="0" errors="0" skipped="0">
-		<testcase classname="integration_test9.IntegrationTestMain9" name="test_keyboard_8" time="0.000" timestamp="2024-08-15T16:30:44" file="example_test_folder\integration_test9.py" line="90"/>
+	<testsuite name="integration_test9.IntegrationTestMain9-20240815165314" tests="1" file="integration_test9.py" time="0.005" timestamp="2024-08-15T16:53:15" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test9.IntegrationTestMain9" name="test_keyboard_8" time="0.005" timestamp="2024-08-15T16:53:15" file="example_test_folder\integration_test9.py" line="90"/>
 	</testsuite>
 </testsuites>
