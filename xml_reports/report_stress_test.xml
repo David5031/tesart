@@ -1,0 +1,216 @@
+# tests reports
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="stress_test.TestMain-20240811173513" tests="1" file="stress_test.py" time="35.176" timestamp="2024-08-11T17:35:49" failures="0" errors="0" skipped="0">
+		<testcase classname="stress_test.TestMain" name="test_stress" time="35.176" timestamp="2024-08-11T17:35:49" file="example_test_folder\stress_test.py" line="45">
+			<system-out><![CDATA[System information:
+System:Windows
+Node name :asus_tuf_a15
+Machine :AMD64
+Processor :AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+
+stress test :
+Data before tests :
+GPU0:
+Name:NVIDIA GeForce RTX 4060 Laptop GPU
+Memory: 532.0 MiB / 8188.0 MiB
+Utilization: 1.0%
+Temperature: 42.0 °C
+
+
+CPU usage setup: 0.5 %
+Memory usage setup: 46.2%
+disk usage setup: 81.3%
+
+
+cook: 1.0
+61.0 fps 
+cook realtime: 1.0
+frametime: 5.839700222015381 msec
+dropped frames: 0.0 frames
+gpu mem used: 265.552978515625 megabytes
+cpu mem used: 2351.816650390625 megabytes
+
+
+key : 0
+numeroChanson =  5
+pressed -
+key : 1
+numeroChanson =  1
+pressed -
+key : 2
+numeroChanson =  5
+pressed -
+key : 3
+numeroChanson =  2
+pressed -
+key : 4
+numeroChanson =  5
+pressed -
+key : 5
+numeroChanson =  3
+pressed -
+key : 6
+numeroChanson =  5
+pressed -
+key : 7
+numeroChanson =  4
+pressed -
+key : 8
+numeroChanson =  5
+pressed -
+key : 9
+numeroChanson =  1
+pressed -
+key : 0
+numeroChanson =  5
+pressed -
+key : 1
+numeroChanson =  2
+pressed -
+key : 2
+numeroChanson =  5
+pressed -
+key : 3
+numeroChanson =  3
+pressed -
+key : 4
+numeroChanson =  5
+pressed -
+key : 5
+numeroChanson =  4
+pressed -
+key : 6
+numeroChanson =  5
+pressed -
+key : 7
+numeroChanson =  1
+pressed -
+key : 8
+numeroChanson =  5
+pressed -
+key : 9
+numeroChanson =  2
+pressed -
+key : 0
+numeroChanson =  5
+pressed -
+key : 1
+numeroChanson =  3
+pressed -
+key : 2
+numeroChanson =  5
+pressed -
+key : 3
+numeroChanson =  4
+pressed -
+key : 4
+numeroChanson =  5
+pressed -
+key : 5
+numeroChanson =  1
+pressed -
+key : 6
+numeroChanson =  5
+pressed -
+key : 7
+numeroChanson =  2
+pressed -
+key : 8
+numeroChanson =  5
+pressed -
+key : 9
+numeroChanson =  3
+pressed -
+key : 0
+numeroChanson =  5
+pressed -
+key : 1
+numeroChanson =  4
+pressed -
+key : 2
+numeroChanson =  5
+pressed -
+key : 3
+numeroChanson =  1
+pressed -
+key : 4
+numeroChanson =  5
+pressed -
+key : 5
+numeroChanson =  2
+pressed -
+key : 6
+numeroChanson =  5
+pressed -
+key : 7
+numeroChanson =  3
+pressed -
+key : 8
+numeroChanson =  5
+pressed -
+key : 9
+numeroChanson =  4
+pressed -
+key : 0
+numeroChanson =  5
+pressed -
+key : 1
+numeroChanson =  1
+pressed -
+key : 2
+numeroChanson =  5
+pressed -
+key : 3
+numeroChanson =  2
+pressed -
+key : 4
+numeroChanson =  5
+pressed -
+key : 5
+numeroChanson =  3
+pressed -
+key : 6
+numeroChanson =  5
+pressed -
+key : 7
+numeroChanson =  4
+pressed -
+key : 8
+numeroChanson =  5
+pressed -
+key : 9
+numeroChanson =  1
+pressed -
+
+
+cook: 1.0
+61.0 fps 
+cook realtime: 1.0
+frametime: 5.839700222015381 msec
+dropped frames: 0.0 frames
+gpu mem used: 265.552978515625 megabytes
+cpu mem used: 2351.792236328125 megabytes
+stress test duration : 32.42525792121887 secondes
+CPU usage: 0.3 %
+CPU times: scputimes(user=389.046875, system=218.87500000000728, idle=33434.78124999999, interrupt=10.015625, dpc=11.84375) 
+CPU stats: scpustats(ctx_switches=36853403, interrupts=33066498, soft_interrupts=0, syscalls=382414860) 
+CPU frequence: scpufreq(current=2560.0, min=0.0, max=3201.0) 
+Memory usage: 45.8%
+swap memory: sswap(total=11811160064, used=97132544, free=11714027520, percent=0.8, sin=0, sout=0) 
+disk usage: 81.3%
+process name :TouchDesigner.exe process cpu percent :0.0 process memory percent :11.556624074915574
+
+
+Data after tests :
+GPU0:
+Name:NVIDIA GeForce RTX 4060 Laptop GPU
+Memory: 516.0 MiB / 8188.0 MiB
+Utilization: 0.0%
+Temperature: 40.0 °C
+
+
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

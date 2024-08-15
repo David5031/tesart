@@ -1,0 +1,22 @@
+# tests reports
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="unit_test.UnitTestMain-20240815163801" tests="3" file="unit_test.py" time="0.021" timestamp="2024-08-15T16:38:01" failures="0" errors="0" skipped="0">
+		<testcase classname="unit_test.UnitTestMain" name="test_button1_presence" time="0.018" timestamp="2024-08-15T16:38:01" file="example_test_folder\unit_test.py" line="42">
+			<system-out><![CDATA[tox loaded
+tox unloaded
+]]></system-out>
+		</testcase>
+		<testcase classname="unit_test.UnitTestMain" name="test_button_press" time="0.002" timestamp="2024-08-15T16:38:01" file="example_test_folder\unit_test.py" line="50">
+			<!--test momentary button pressure -->
+			<system-out><![CDATA[tox loaded
+tox unloaded
+]]></system-out>
+		</testcase>
+		<testcase classname="unit_test.UnitTestMain" name="test_container31_load" time="0.001" timestamp="2024-08-15T16:38:01" file="example_test_folder\unit_test.py" line="35">
+			<system-out><![CDATA[tox loaded
+tox unloaded
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

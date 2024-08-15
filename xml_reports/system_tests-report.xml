@@ -1,0 +1,184 @@
+# tests reports
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test1.SystemTestMain-20240815164000" tests="1" file="system_test1.py" time="0.042" timestamp="2024-08-15T16:40:02" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test1.SystemTestMain" name="test_song_0" time="0.042" timestamp="2024-08-15T16:40:02" file="example_test_folder\system_test1.py" line="369">
+			<system-out><![CDATA[pressed -
+numeroChanson =  10
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test10.SystemTestMain10-20240815164002" tests="1" file="system_test10.py" time="0.032" timestamp="2024-08-15T16:40:04" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test10.SystemTestMain10" name="test_song_9" time="0.032" timestamp="2024-08-15T16:40:04" file="example_test_folder\system_test10.py" line="51">
+			<system-out><![CDATA[pressed -
+numeroChanson =  9
+normalement prochain est 5
+5.0
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test11.SystemTestMain11-20240815164004" tests="1" file="system_test11.py" time="0.019" timestamp="2024-08-15T16:40:06" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test11.SystemTestMain11" name="test_change_song_for5" time="0.019" timestamp="2024-08-15T16:40:06" file="example_test_folder\system_test11.py" line="51">
+			<system-out><![CDATA[numeroChanson =  5
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test12.SystemTestMain12-20240815164006" tests="1" file="system_test12.py" time="0.255" timestamp="2024-08-15T16:40:08" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test12.SystemTestMain12" name="test_change_song_diff5" time="0.255" timestamp="2024-08-15T16:40:08" file="example_test_folder\system_test12.py" line="50">
+			<system-out><![CDATA[numeroChanson =  1
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test13.SystemTestMain13-20240815164008" tests="1" file="system_test13.py" time="0.014" timestamp="2024-08-15T16:40:09" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test13.SystemTestMain13" name="test_applause" time="0.014" timestamp="2024-08-15T16:40:09" file="example_test_folder\system_test13.py" line="51">
+			<system-out><![CDATA[numeroChanson =  5
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test14.SystemTestMain14-20240815164009" tests="1" file="system_test14.py" time="0.256" timestamp="2024-08-15T16:40:11" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test14.SystemTestMain14" name="test_silence" time="0.256" timestamp="2024-08-15T16:40:11" file="example_test_folder\system_test14.py" line="50">
+			<system-out><![CDATA[value prochain pour silence normalement (1) 1.0
+clique d'abord pour le silence
+numeroChanson =  1
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test15.SystemTestMain15-20240815164011" tests="1" file="system_test15.py" time="0.002" timestamp="2024-08-15T16:40:13" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test15.SystemTestMain15" name="test_onCycle" time="0.002" timestamp="2024-08-15T16:40:13" file="example_test_folder\system_test15.py" line="60">
+			<system-out><![CDATA[song loaded
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test16.SystemTestMain16-20240815164013" tests="1" file="system_test16.py" time="0.261" timestamp="2024-08-15T16:40:14" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test16.SystemTestMain16" name="test_invalid_key_pressed" time="0.261" timestamp="2024-08-15T16:40:14" file="example_test_folder\system_test16.py" line="40">
+			<system-out><![CDATA[pressed -
+numeroChanson =  1
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test17.SystemTestMain17-20240815164015" tests="1" file="system_test17.py" time="0.001" timestamp="2024-08-15T16:40:16" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test17.SystemTestMain17" name="test_onValueChange" time="0.001" timestamp="2024-08-15T16:40:16" file="example_test_folder\system_test17.py" line="54"/>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test18.SystemTestMain18-20240815164016" tests="1" file="system_test18.py" time="0.003" timestamp="2024-08-15T16:40:18" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test18.SystemTestMain18" name="test_onCycle" time="0.003" timestamp="2024-08-15T16:40:18" file="example_test_folder\system_test18.py" line="59"/>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test19.SystemTestMain18-20240815164018" tests="1" file="system_test19.py" time="0.001" timestamp="2024-08-15T16:40:19" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test19.SystemTestMain18" name="test_onCycle" time="0.001" timestamp="2024-08-15T16:40:19" file="example_test_folder\system_test19.py" line="59"/>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test2.SystemTestMain2-20240815164019" tests="1" file="system_test2.py" time="0.254" timestamp="2024-08-15T16:40:21" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test2.SystemTestMain2" name="test_song_1" time="0.254" timestamp="2024-08-15T16:40:21" file="example_test_folder\system_test2.py" line="76">
+			<system-out><![CDATA[pressed -
+numeroChanson =  1
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test20.SystemTestMain18-20240815164021" tests="1" file="system_test20.py" time="0.001" timestamp="2024-08-15T16:40:22" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test20.SystemTestMain18" name="test_onCycle" time="0.001" timestamp="2024-08-15T16:40:22" file="example_test_folder\system_test20.py" line="60"/>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test3.SystemTestMain3-20240815164023" tests="1" file="system_test3.py" time="0.303" timestamp="2024-08-15T16:40:24" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test3.SystemTestMain3" name="test_song_2" time="0.303" timestamp="2024-08-15T16:40:24" file="example_test_folder\system_test3.py" line="80">
+			<system-out><![CDATA[pressed -
+numeroChanson =  2
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test4.SystemTestMain4-20240815164025" tests="1" file="system_test4.py" time="0.294" timestamp="2024-08-15T16:40:26" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test4.SystemTestMain4" name="test_song_3" time="0.294" timestamp="2024-08-15T16:40:26" file="example_test_folder\system_test4.py" line="53">
+			<system-out><![CDATA[pressed -
+numeroChanson =  3
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test5.SystemTestMain5-20240815164026" tests="1" file="system_test5.py" time="0.315" timestamp="2024-08-15T16:40:28" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test5.SystemTestMain5" name="test_song_4" time="0.315" timestamp="2024-08-15T16:40:28" file="example_test_folder\system_test5.py" line="74">
+			<system-out><![CDATA[pressed -
+numeroChanson =  4
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test6.SystemTestMain6-20240815164029" tests="1" file="system_test6.py" time="0.011" timestamp="2024-08-15T16:40:30" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test6.SystemTestMain6" name="test_song_5" time="0.011" timestamp="2024-08-15T16:40:30" file="example_test_folder\system_test6.py" line="53">
+			<system-out><![CDATA[pressed -
+numeroChanson =  5
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test7.SystemTestMain7-20240815164030" tests="1" file="system_test7.py" time="0.036" timestamp="2024-08-15T16:40:32" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test7.SystemTestMain7" name="test_song_6" time="0.036" timestamp="2024-08-15T16:40:32" file="example_test_folder\system_test7.py" line="53">
+			<system-out><![CDATA[pressed -
+numeroChanson =  6
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test8.SystemTestMain8-20240815164032" tests="1" file="system_test8.py" time="0.089" timestamp="2024-08-15T16:40:34" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test8.SystemTestMain8" name="test_song_7" time="0.089" timestamp="2024-08-15T16:40:34" file="example_test_folder\system_test8.py" line="50">
+			<system-out><![CDATA[pressed -
+numeroChanson =  7
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test9.SystemTestMain9-20240815164034" tests="1" file="system_test9.py" time="0.030" timestamp="2024-08-15T16:40:35" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test9.SystemTestMain9" name="test_song_8" time="0.030" timestamp="2024-08-15T16:40:35" file="example_test_folder\system_test9.py" line="49">
+			<system-out><![CDATA[pressed -
+numeroChanson =  8
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
