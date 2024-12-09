@@ -57,12 +57,12 @@ class TestMain(unittest.TestCase):
         #version Nvidia
         gpus = GPUtil.getGPUs()
         for gpu in gpus:
-            print("Data before tests :")
+            print("Data before simulation :")
             print("GPU" + str(gpu.id) + ":")
             print("Name:" + str(gpu.name))
-            print(f"Memory: {gpu.memoryUsed} MiB / {gpu.memoryTotal} MiB")
-            print(f"Utilization: {gpu.load * 100}%")
-            print(f"Temperature: {gpu.temperature} °C")
+            print(f"GPU Memory: {gpu.memoryUsed} MiB / {gpu.memoryTotal} MiB")
+            print(f"GPUUtilization: {gpu.load * 100}%")
+            print(f"GPU Temperature: {gpu.temperature} °C")
             print("\n")
 
         # version AMD attention pas sur windows ??
@@ -75,13 +75,13 @@ class TestMain(unittest.TestCase):
 
 
         cpu_usage = psutil.cpu_percent(interval=1)
-        print(f"CPU usage setup: {cpu_usage} %")
+        print(f"CPU usage : {cpu_usage} %")
 
         memory_usage = psutil.virtual_memory()
-        print(f"Memory usage setup: {memory_usage.percent}%")
+        print(f"Virtual memory : {memory_usage.percent}%")
 
         disk_usage = psutil.disk_usage('/')
-        print(f"disk usage setup: {disk_usage.percent}%")
+        print(f"disk usage : {disk_usage.percent}%")
         
         #print("channels in perform1:")
         #for chan in perform1_chop.chans():
@@ -89,11 +89,7 @@ class TestMain(unittest.TestCase):
  
 
         num_iterations = 50
-        start_time = time.time()
-        
-
-        
-
+    
     
         # pour verifier les ressources
 
@@ -134,7 +130,7 @@ class TestMain(unittest.TestCase):
         
         frameTime_chan = perform1_chop.chan("msec")
         frameTime = frameTime_chan.eval()
-        print(f"frametime: {frameTime} msec")
+        print(f"frame time: {frameTime} msec")
         
 
         droppedframes_chan = perform1_chop.chan("dropped_frames")
@@ -147,14 +143,14 @@ class TestMain(unittest.TestCase):
         gpumemused_chan = perform1_chop.chan("gpu_mem_used")
         if gpumemused_chan :
             gpumemused = gpumemused_chan.eval()
-            print(f"gpu mem used: {gpumemused} megabytes")
+            print(f"gpu memory used: {gpumemused} megabytes")
         else:
             print("pas de gpu mem used ")   
 
         cpumemused_chan = perform1_chop.chan("cpu_mem_used")
         if cpumemused_chan :
             cpumemused = cpumemused_chan.eval()
-            print(f"cpu mem used: {cpumemused} megabytes")
+            print(f"cpu memory used: {cpumemused} megabytes")
         else:
             print("pas de cpu mem used ") 
 
@@ -206,7 +202,7 @@ class TestMain(unittest.TestCase):
         
         frameTime_chan = perform1_chop.chan("msec")
         frameTime = frameTime_chan.eval()
-        print(f"frametime: {frameTime} msec")
+        print(f"frame time: {frameTime} msec")
         
 
         droppedframes_chan = perform1_chop.chan("dropped_frames")
@@ -219,21 +215,18 @@ class TestMain(unittest.TestCase):
         gpumemused_chan = perform1_chop.chan("gpu_mem_used")
         if gpumemused_chan :
             gpumemused = gpumemused_chan.eval()
-            print(f"gpu mem used: {gpumemused} megabytes")
+            print(f"gpu memory used: {gpumemused} megabytes")
         else:
             print("pas de gpu mem used ")   
 
         cpumemused_chan = perform1_chop.chan("cpu_mem_used")
         if cpumemused_chan :
             cpumemused = cpumemused_chan.eval()
-            print(f"cpu mem used: {cpumemused} megabytes")
+            print(f"cpu memory used: {cpumemused} megabytes")
         else:
             print("pas de cpu mem used ") 
                 
        
-        end_time = time.time()
-        
-        print(f"stress test duration : {end_time - start_time} secondes")
         
         cpu_usage = psutil.cpu_percent(interval=1)
         print(f"CPU usage: {cpu_usage} %")
@@ -251,7 +244,7 @@ class TestMain(unittest.TestCase):
         print(f"CPU frequence: {cpu_frequency} ")
 
         virtual_memory_usage = psutil.virtual_memory()
-        print(f"Memory usage: {virtual_memory_usage.percent}%")
+        print(f"Virtual memory usage: {virtual_memory_usage.percent}%")
 
         #
         swap_memory = psutil.swap_memory()
@@ -285,9 +278,9 @@ class TestMain(unittest.TestCase):
             print("Data after tests :")
             print("GPU" + str(gpu.id) + ":")
             print("Name:" + str(gpu.name))
-            print(f"Memory: {gpu.memoryUsed} MiB / {gpu.memoryTotal} MiB")
-            print(f"Utilization: {gpu.load * 100}%")
-            print(f"Temperature: {gpu.temperature} °C")
+            print(f"GPU Memory: {gpu.memoryUsed} MiB / {gpu.memoryTotal} MiB")
+            print(f"GPU Utilization: {gpu.load * 100}%")
+            print(f"GPU Temperature: {gpu.temperature} °C")
             print("\n")
     
 
