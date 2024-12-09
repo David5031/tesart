@@ -1,0 +1,69 @@
+# tests reports
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="load_test.LoadTestMain-20241130121948" tests="1" file="load_test.py" time="11.370" timestamp="2024-11-30T12:20:01" failures="0" errors="0" skipped="0">
+		<testcase classname="load_test.LoadTestMain" name="test_load" time="11.370" timestamp="2024-11-30T12:20:01" file="example_test_folder\load_test.py" line="46">
+			<system-out><![CDATA[load test :
+System information:
+System:Windows
+Node name :asus_tuf_a15
+Machine :AMD64
+Processor :AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+
+Data before simulation :
+GPU0:
+Name:NVIDIA GeForce RTX 4060 Laptop GPU
+GPU Memory: 814.0 MiB / 8188.0 MiB
+GPU Utilization: 15.0%
+GPU Temperature: 41.0 °C
+
+
+numeroChanson =  1
+ca devrait 5
+5.0
+key : 0
+pressed -
+valeur de prochain
+10.0
+key : 1
+pressed -
+valeur de prochain
+1.0
+key : 2
+pressed -
+valeur de prochain
+2.0
+2.0
+peut etre applaudissement
+audio/silence5sec.wav
+
+
+project data
+cook: 1.0
+ 60.0 fps
+cook realtime: 1.0
+frame time: 6.089900016784668 msec
+dropped frames: 0.0 frames
+gpu memory used: 266.0723876953125 megabytes
+cpu memory used: 2350.055419921875 megabytes
+
+CPU usage: 0.0 %
+Virtual memory usage: 44.6%
+disk usage: 85.6%
+
+
+process name :TouchDesigner.exe process cpu percent :0.0 process memory percent :11.610797939741648
+
+
+Data after tests :
+GPU0:
+Name:NVIDIA GeForce RTX 4060 Laptop GPU
+GPU Memory: 825.0 MiB / 8188.0 MiB
+GPU Utilization: 18.0%
+GPU Temperature: 41.0 °C
+
+
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
