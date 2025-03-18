@@ -4,6 +4,8 @@ import json
 import sys
 import os
 import unittest
+import xmlrunner
+
 
 CONFIG_PATH = "config.json"
 
@@ -51,21 +53,42 @@ def run(config):
     :param config: data extracted from config.json.
     :type  config: dict
     """
+
+    with open("tests-report.xml", "w") as output:
+        output.write("# tests reports\n")
+    
+
     tests_location = config["tests_location"]
-    test_results = None
+    #test_results = None
     sys.path.append(tests_location)
 
+    
     for py_file_entry in _get_py_files(tests_location):
         py_file_module_path = os.path.splitext(py_file_entry)[0]
         # import py-file as module
         test_module = importlib.import_module(py_file_module_path.replace("\\", "/"))
         # unittest suite
-        suite = unittest.defaultTestLoader.loadTestsFromTestCase(test_module.TestMain)
+        suite = unittest.TestSuite()
+        
+        # Loop through all attributes of the module
+        for attribute_name in dir(test_module):
+            attribute = getattr(test_module, attribute_name)
+            # Check if the attribute is a class and a subclass of unittest.TestCase
+            if isinstance(attribute, type) and issubclass(attribute, unittest.TestCase):
+                # Add tests from the test case class to the suite
+                suite.addTests(unittest.defaultTestLoader.loadTestsFromTestCase(attribute))
+
+
+        with open('tests-report.xml','ab') as output:
+            test_results = xmlrunner.XMLTestRunner(output=output).run(suite)
+            #test_runner.run(suite)
         # test_results is a unittest.TestResult object
-        test_results = unittest.TextTestRunner().run(suite)
+        #test_results = unittest.TextTestRunner().run(suite)
         # print(test_results.errors)
         # print(test_results.failures)
-        
+    
+
+
     sys.path.remove(tests_location)
     return test_results
 
@@ -74,6 +97,7 @@ def run(config):
 CONFIG_DICT = load_config()
 # run unit test launcher
 sys.stdout.write(run(CONFIG_DICT))
-
+ 
 # uncomment below line to automatically quit Touch Designer after running tests.
 # exit()
+

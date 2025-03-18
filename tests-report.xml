@@ -1,0 +1,38 @@
+# tests reports
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="integration_test3.IntegrationTestMain3-20250318185050" tests="1" file="integration_test3.py" time="0.003" timestamp="2025-03-18T18:50:51" failures="0" errors="0" skipped="0">
+		<testcase classname="integration_test3.IntegrationTestMain3" name="test_keyboard_2" time="0.003" timestamp="2025-03-18T18:50:51" file="example_test_folder\integration_test3.py" line="88"/>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="system_test3.SystemTestMain3-20250318185051" tests="1" file="system_test3.py" time="0.005" timestamp="2025-03-18T18:50:53" failures="0" errors="0" skipped="0">
+		<testcase classname="system_test3.SystemTestMain3" name="test_song_2" time="0.005" timestamp="2025-03-18T18:50:53" file="example_test_folder\system_test3.py" line="80">
+			<system-out><![CDATA[pressed -
+numeroChanson =  2
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="unit_test1.UnitTestMain-20250318185053" tests="3" file="unit_test1.py" time="0.007" timestamp="2025-03-18T18:50:53" failures="0" errors="0" skipped="0">
+		<testcase classname="unit_test1.UnitTestMain" name="test_button1_presence" time="0.003" timestamp="2025-03-18T18:50:53" file="example_test_folder\unit_test1.py" line="42">
+			<system-out><![CDATA[tox loaded
+tox unloaded
+]]></system-out>
+		</testcase>
+		<testcase classname="unit_test1.UnitTestMain" name="test_button_press" time="0.002" timestamp="2025-03-18T18:50:53" file="example_test_folder\unit_test1.py" line="50">
+			<!--test momentary button pressure -->
+			<system-out><![CDATA[tox loaded
+tox unloaded
+]]></system-out>
+		</testcase>
+		<testcase classname="unit_test1.UnitTestMain" name="test_container31_load" time="0.002" timestamp="2025-03-18T18:50:53" file="example_test_folder\unit_test1.py" line="35">
+			<system-out><![CDATA[tox loaded
+tox unloaded
+]]></system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
