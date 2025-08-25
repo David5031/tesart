@@ -1,28 +1,26 @@
-import random
-import string
-import unittest
-import time
-import timeit
-import psutil
-import GPUtil
 import platform
+import time
+import unittest
 
+import GPUtil
+import psutil
 import td
+
 
 class LoadTestMain(unittest.TestCase):
     """load test : 1."""
-    
+
     @classmethod
     def setUpClass(cls) :
         cls.base_path = td.op("/")
         cls.tox_path = './wall_of_fame.tox'
-        if(td.op("/container31") == None):
+        if(td.op("/container31") is None):
             cls.base_path.loadTox(cls.tox_path)
             print("tox loaded")
         else :
             print("tox already loaded")
-            
-    
+
+
     # for unload tox file
     @classmethod
     def tearDownClass(cls):
@@ -32,7 +30,14 @@ class LoadTestMain(unittest.TestCase):
 
     def simulate_key_press(key):
         keyboardin1_callbacks = td.op("/container31/project1/keyboardin1_callbacks")
-        td.mod(keyboardin1_callbacks).onKey(None,key,key, False, False, False, False, False, False,False, False, False, True, 0, False, False, False)
+        td.mod(keyboardin1_callbacks).onKey(None,key,key,
+                                            False, False,
+                                            False, False,
+                                            False, False,
+                                            False, False,
+                                            False, True,
+                                            0, False,
+                                            False, False)
 
     def simulate_music_change():
         chopexec4 = td.op("/container31/project1/chopexec4")
@@ -42,8 +47,7 @@ class LoadTestMain(unittest.TestCase):
         chopexec5 = td.op("/container31/project1/chopexec5")
         td.mod(chopexec5).onOffToOn(channel =0, sampleIndex = 0, val = 1.0, prev = 0)
 
-    
-    def test_load(self):   
+    def test_load(self):
         print("load test :")
 
         system_info = platform.uname()
@@ -52,12 +56,8 @@ class LoadTestMain(unittest.TestCase):
         print("Node name :" + system_info.node)
         print("Machine :" + system_info.machine)
         print("Processor :" + system_info.processor + "\n")
-    
-        
-        
-        #print("channels in perform1:")
-        #for chan in perform1_chop.chans():
-        #    print(chan.name)
+
+
         gpus = GPUtil.getGPUs()
         for gpu in gpus:
             print("Data before simulation :")
@@ -67,15 +67,15 @@ class LoadTestMain(unittest.TestCase):
             print(f"GPU Utilization: {gpu.load * 100}%")
             print(f"GPU Temperature: {gpu.temperature} °C")
             print("\n")
-      
+
         #simulation
         num_iterations = 3
 
         prochain = td.op("/container31/project1/prochain")
         prochain.par.value0 = 1
 
-        vraiProchain = td.op("/container31/project1/vraiProchain")
-        vraiProchain.par.value0 = 1
+        vraiprochain = td.op("/container31/project1/vraiProchain")
+        vraiprochain.par.value0 = 1
 
         LoadTestMain.simulate_music_change()
         print('ca devrait 5')
@@ -84,30 +84,28 @@ class LoadTestMain(unittest.TestCase):
         for i in range(num_iterations):
             key = str(i%10)
             print("key :", key)
-            
-            
-            LoadTestMain.simulate_key_press(key)  
+
+            LoadTestMain.simulate_key_press(key)
             LoadTestMain.simulate_key_press('-')
             print('valeur de prochain')
             print(prochain.par.value0)
             time.sleep(3)
 
-        #print('ca devrait 5 aussi')
+
         print(prochain.par.value0)
         LoadTestMain.simulate_applause()
         print('peut etre applaudissement')
         print(td.op("/container31/project1/audiofilein2").par.file)
 
-        
+
         perform1_chop = td.op("/perform1")
-        if perform1_chop == None:
+        if perform1_chop is None:
             print("Perfom CHOP not found")
-        
-        # mise a jour
+
+        # update
         perform1_chop.cook(force=True)
 
-       
-        
+
         print('\n')
         print('project data')
         td.op("/container31").cook(force=True)
@@ -117,7 +115,7 @@ class LoadTestMain(unittest.TestCase):
             print(f"cook: {cook}")
         else:
             print("pas de cook " )
-        
+
         fps_chan = perform1_chop.chan("fps")
         if fps_chan :
             fps = fps_chan.eval()
@@ -127,7 +125,7 @@ class LoadTestMain(unittest.TestCase):
                 print("pas de fps valide")
         else:
             print("pas de fps ", fps_chan )
-        
+
         cook_realtime_chan = perform1_chop.chan("cookrealtime")
         if cook_realtime_chan :
             cook_realtime = cook_realtime_chan.eval()
@@ -135,14 +133,14 @@ class LoadTestMain(unittest.TestCase):
         else:
             print("pas de cook realtime " )
 
-        frameTime_chan = perform1_chop.chan("msec") 
-        frameTime = frameTime_chan.eval()
-        print(f"frame time: {frameTime} msec")
-        
+        frametime_chan = perform1_chop.chan("msec")
+        frametime = frametime_chan.eval()
+        print(f"frame time: {frametime} msec")
+
 
         droppedframes_chan = perform1_chop.chan("dropped_frames")
-        if droppedframes_chan != None :
-            #droppedframes = droppedframes_chan.eval()
+        if droppedframes_chan is not None :
+
             print(f"dropped frames: {droppedframes_chan} frames")
         else:
             print("pas de dropped frames ")
@@ -152,14 +150,14 @@ class LoadTestMain(unittest.TestCase):
             gpumemused = gpumemused_chan.eval()
             print(f"gpu memory used: {gpumemused} megabytes")
         else:
-            print("pas de gpu mem used ")   
+            print("pas de gpu mem used ")
 
         cpumemused_chan = perform1_chop.chan("cpu_mem_used")
         if cpumemused_chan :
             cpumemused = cpumemused_chan.eval()
             print(f"cpu memory used: {cpumemused} megabytes")
         else:
-            print("pas de cpu mem used ") 
+            print("pas de cpu mem used ")
 
         print("")
         cpu_usage = psutil.cpu_percent(interval=1)
@@ -173,18 +171,17 @@ class LoadTestMain(unittest.TestCase):
         print('\n')
 
         p = psutil.Process()
-        # touchdesigner process
+
         process_name = p.name()
         process_cpu_percent = p.cpu_percent() 
         process_memory_percent = p.memory_percent()
-  
 
         print("process name :"  + str (process_name) ,
-               "process cpu percent :" + str(process_cpu_percent) , 
+               "process cpu percent :" + str(process_cpu_percent) ,
                "process memory percent :" + str(process_memory_percent) ,)
-           
+
         print('\n')
-    
+
         gpus = GPUtil.getGPUs()
         for gpu in gpus:
             print("Data after tests :")
@@ -194,7 +191,6 @@ class LoadTestMain(unittest.TestCase):
             print(f"GPU Utilization: {gpu.load * 100}%")
             print(f"GPU Temperature: {gpu.temperature} °C")
             print("\n")
-     
-    
+
 if __name__ =="__main__":
     unittest.main()

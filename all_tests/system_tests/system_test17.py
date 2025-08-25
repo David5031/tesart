@@ -1,15 +1,12 @@
-from asyncio import run
-import random
-import string
 import unittest
 
 import td
-import time
+
 
 class SystemTestMain17(unittest.TestCase):
     """system test : scenario 17."""
-   
-    # scenario system test n°17  
+
+    # scenario system test n°17
     # Description : test of display timer
     # Precondition : The artworks is running with the default timer values
     # Steps : 1) Simulate value change by value 1, 5 and 10
@@ -20,14 +17,12 @@ class SystemTestMain17(unittest.TestCase):
     def setUpClass(cls):
         cls.base_path = td.op("/")
         cls.tox_path = './wall_of_fame.tox'
-        if(td.op("/container31") == None):
+        if(td.op("/container31") is None):
             cls.base_path.loadTox(cls.tox_path)
             print("tox loaded")
         else :
             print("tox already loaded")
 
-    
-    
     # for unload tox file
     @classmethod
     def tearDownClass(cls):
@@ -35,7 +30,6 @@ class SystemTestMain17(unittest.TestCase):
         tox_load.destroy()
         print("tox unloaded")
 
-    
     def setUp(self):
         # Initialize the operators
         self.numeroCycle = td.op('/container31/project1/numeroCycle')
@@ -54,26 +48,26 @@ class SystemTestMain17(unittest.TestCase):
     def test_onValueChange(self):
         # Test the onValueChange function with different values
         test_values = [1, 5, 10]
-        
+
         for val in test_values:
             # Simulate the value change
-            td.mod(td.op("/container31/project1/chopexec1")).onValueChange(None, None, val, None)
-            
+            td.mod(td.op("/container31/project1/chopexec1")).onValueChange(None, None,
+                                                                           val, None)
+
             # Check if numeroCycle is reset to 0
             self.assertEqual(self.numeroCycle.par.value0, 0)
-            
+
             # Check if timerAffichage length is correctly set
             new_length = self.timers1[val - 1] + 1
             self.assertEqual(self.timerAffichage.par.length, new_length)
-            
-            # Check if timerAffichage start pulse is triggered
-            self.assertTrue(self.timerAffichage.par.start.pulse, 1) 
-            
-            # Check if numeroAffichage is correctly set
-            new_numeroAffichage = 0 if val == 5 else 1
-            self.assertEqual(self.numeroAffichage.par.value0,  new_numeroAffichage)
 
-    
-    
+            # Check if timerAffichage start pulse is triggered
+            self.assertTrue(self.timerAffichage.par.start.pulse, 1)
+
+            # Check if numeroAffichage is correctly set
+            new_numero_affichage = 0 if val == 5 else 1
+            self.assertEqual(self.numeroAffichage.par.value0,  new_numero_affichage)
+
+
 if __name__ == "__main__":
     unittest.main()
